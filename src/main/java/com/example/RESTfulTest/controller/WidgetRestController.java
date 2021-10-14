@@ -1,9 +1,10 @@
 package com.example.RESTfulTest.controller;
 
+
 import com.example.RESTfulTest.model.Widget;
 import com.example.RESTfulTest.service.WidgetService;
 import org.apache.logging.log4j.LogManager;
-import org.slf4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -17,7 +18,7 @@ import java.util.Optional;
 
 @RestController
 public class WidgetRestController {
-    private static final Logger logger = (Logger) LogManager.getLogger(WidgetRestController.class);
+    private static final Logger logger = LogManager.getLogger(WidgetRestController.class);
 
     @Autowired
     private WidgetService widgetService;
